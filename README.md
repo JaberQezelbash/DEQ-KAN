@@ -1,2 +1,2 @@
 # DEQ-KAN
-Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
+DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
