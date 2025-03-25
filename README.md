@@ -34,7 +34,7 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 
 ## Introduction
 
-Kolmogorov-Arnold Networks (KANs) were introduced as a “dual” to classic MLPs: instead of having activation functions on **nodes**, KANs have **activation functions on edges**. This structure is motivated by the Kolmogorov–Arnold (K–A) representation theorem, which states that any continuous multivariate function can be decomposed into sums of univariate functions of linear combinations of the inputs.
+KANs were introduced as a “dual” to classic MLPs: instead of having activation functions on **nodes**, KANs have **activation functions on edges**. This structure is motivated by the Kolmogorov–Arnold (K–A) representation theorem, which states that any continuous multivariate function can be decomposed into sums of univariate functions of linear combinations of the inputs.
 
 **Deep Equilibrium Kolmogorov–Arnold Networks (DEQ-KAN)** build upon this foundation by integrating:
 
