@@ -120,13 +120,13 @@ Below is an example setup referencing [pykan](https://github.com/KindXiaoming/py
 
 **Requirements** (example versions):
 ```bash
-python==3.9.7
+python==3.13.0
 matplotlib==3.6.2
 numpy==1.24.4
 scikit_learn==1.1.3
 setuptools==65.5.0
 sympy==1.11.1
-torch==2.2.2
+torch==2.5.0
 tqdm==4.66.2
 pandas==2.0.1
 seaborn
