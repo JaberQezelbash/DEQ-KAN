@@ -91,7 +91,7 @@ Below is an example setup referencing [pykan](https://github.com/KindXiaoming/py
 
 **Requirements**
 ```bash
-# python==3.9.7
+python==3.9.7
 matplotlib==3.6.2
 numpy==1.24.4
 scikit_learn==1.1.3
@@ -102,7 +102,7 @@ tqdm==4.66.2
 pandas==2.0.1
 seaborn
 pyyaml
-
+```
 
 **Efficiency Mode**
 ```bash
