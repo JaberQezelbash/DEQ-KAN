@@ -4,9 +4,8 @@ DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 
 
 
-<img width="600" alt="kan_plot" src="https://github.com/KindXiaoming/pykan/assets/23551623/a2d2d225-b4d2-4c1e-823e-bc45c7ea96f9">
+<img width="600" alt="kan_plot" src="https://github.com/JaberQezelbash/DEQ-KAN/blob/main/assets/DEQ-KAN.svg>
 
-# Kolmogorov-Arnold Networks (KANs) & DEQ-KAN
 
 This repository extends the original Kolmogorov-Arnold Networks (KANs) concept to include our new method, **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks**, as presented in our paper:
 
