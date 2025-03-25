@@ -10,7 +10,7 @@ DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 This repository extends the original Kolmogorov-Arnold Networks (KANs) concept to include our new method, **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks**, as presented in our paper:
 
 > **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification**  
-> *by Jaber Qezelbash-Chamak* et al.  
+> *by Jaber Qezelbash-Chamak*.  
 > [[Paper Link]](https://github.com/JaberQezelbash/DEQ-KAN) (Implementation Code)  
 
 **DEQ-KAN** unifies Deep Equilibrium Models (DEQs) with Kolmogorov-Arnold expansions, providing an infinite-depth framework that repeatedly refines its feature representations. It has proven effective in challenging tasks like **medical image classification** (pneumonia detection in X-rays, brain tumor classification, and histopathology analysis). DEQ-KAN achieves strong robustness, high accuracy, and efficient memory usage by implicitly modeling a “stack” of infinitely many CNN+KAN layers.
