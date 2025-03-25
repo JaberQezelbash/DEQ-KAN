@@ -116,7 +116,7 @@ Additional environment details for reproducibility:
 
 ## Installation & Requirements
 
-Below is an example setup referencing [pykan](https://github.com/KindXiaoming/pykan). Adapt as needed for **DEQ-KAN**.
+Below is an example setup referencing [DEQ-KAN](https://github.com/JaberQezelbash/DEQ-KAN/).
 
 **Requirements** (example versions):
 ```bash
