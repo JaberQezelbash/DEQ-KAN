@@ -246,17 +246,7 @@ For more details, see the “Methodology” and “Ablation Studies” sections 
 
 ---
 
-## Citations
-
-If you use **KAN**:
-```bibtex
-@article{liu2024kan,
-  title={KAN: Kolmogorov-Arnold Networks},
-  author={Liu, Ziming and Wang, Yixuan and Vaidya, Sachin and Ruehle, Fabian and Halverson, James and Solja{\v{c}}i{\'c}, Marin and Hou, Thomas Y and Tegmark, Max},
-  journal={arXiv preprint arXiv:2404.19756},
-  year={2024}
-}
-```
+## Citation
 
 If you use **DEQ-KAN** or build upon the DEQ-KAN approach, please cite:
 ```bibtex
@@ -272,7 +262,6 @@ If you use **DEQ-KAN** or build upon the DEQ-KAN approach, please cite:
 
 ## Contact
 
-- For **KAN**-related questions, contact [zmliu@mit.edu](mailto:zmliu@mit.edu).  
 - For **DEQ-KAN**-specific questions or medical imaging implementations, please contact [qezelbashc@jaber@ufl.edu](mailto:qezelbashc@jaber@ufl.edu).
 
 ---
