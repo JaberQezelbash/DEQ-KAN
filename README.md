@@ -3,7 +3,6 @@ DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 
 
 
-
 <img width="600" alt="kan_plot" src="https://github.com/JaberQezelbash/DEQ-KAN/blob/main/assets/DEQ-KAN.svg">
 
 
@@ -15,98 +14,104 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 
 ---
 
-**DEQ-KAN** unifies [Deep Equilibrium Models (DEQs)](https://arxiv.org/abs/1909.01377) with [Kolmogorov-Arnold Networks(KANs)](https://arxiv.org/abs/2404.19756), providing an infinite-depth framework that repeatedly refines its feature representations. It has proven effective in challenging tasks like **medical image classification** (pneumonia detection in X-rays, brain tumor classification, and histopathology analysis). DEQ-KAN achieves strong robustness, high accuracy, and efficient memory usage by implicitly modeling a “stack” of infinitely many CNN+KAN layers.
 
+# DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 
+**DEQ-KAN** combines:
+- **Deep Equilibrium Models (DEQs):** Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
+- **Kolmogorov–Arnold Networks (KANs):** A “dual” to MLPs, with learnable univariate functions on edges inspired by the Kolmogorov–Arnold (K–A) representation theorem.
+- **CNN-based Feature Extraction:** Typically used up front to capture spatial patterns (e.g., in medical images).
 
-## Table of Contents
+This repository provides the **DEQ-KAN** approach, including code, usage instructions, and guidance for tasks such as:
+- **Pneumonia detection** in chest X-ray images,
+- **Multi-class brain tumor classification** in MRI scans,
+- **Benign-vs.-malignant** histopathology image classification.
 
-- [Introduction & Background](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Introduction.md)
-- [Methodology](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Methodology.md)
-- [Experiments and Results](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Experiments.md)
-- [Ablation Studies](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Ablation.md)
-- [Conclusion and Future Work](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Conclusion.md)
-- [Appendix: Configurations & Computational Details](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Appendix.md)
-- [Implementation Code](#implementation-code)
-  - [Dataset and Preprocessing](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/DataLoading.md)
-  - [Model Architecture](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/ModelArchitecture.md)
-  - [Training Script & LR Schedulers](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/TrainingScript.md)
-  - [Weight Initialization & Other Utilities](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/LRScheduler.md)
-- [Citation](#citation)
-- [Contact](#contact)
-- [Author's Note](#authors-note)
-
-
-## Introduction & Background
-
-This work motivates the design of **DEQ-KAN** by contrasting traditional multilayer perceptrons (MLPs) with KANs and highlighting the benefits of implicit infinite-depth architectures (DEQs). For a full introduction and background, you can refer to the detailed section of [Introduction & Background](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Introduction.md).
-
-
-
-## Methodology
-
-Our methodology integrates three core components:
-- **Deep Equilibrium Models (DEQs):** Replace explicit stacking of layers with a fixed-point iterative process.
-- **Kolmogorov-Arnold Networks (KANs):** Introduce learnable univariate basis expansions on edges for enhanced expressivity and interpretability.
-- **CNN-based Feature Extraction:** Utilize convolutional layers to capture spatial cues before the DEQ-KAN iterative process.
-
-For complete details including equations, convergence analysis, and model architecture, see:  
-[Methodology](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Methodology.md)
-
-
-
-## Experiments and Results
-
-We validate **DEQ-KAN** on three medical image classification tasks:
-- **Pneumonia Detection** in chest X-rays.
-- **Brain Tumor Classification** in MRI scans.
-- **Histopathology Analysis** (benign vs. malignant).
-
-Comprehensive quantitative metrics and visualization (confusion matrices, ROC curves, t-SNE plots) are discussed in our paper. For the experimental setup and detailed results, visit:  
-[Experiments and Results](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Experiments.md)
-
-
-
-## Ablation Studies
-
-To understand the contribution of each component, we performed ablation studies on our model. We compare variants with and without the DEQ iterations, KAN blocks, and CNN-based feature extractors. The results demonstrate that both the iterative DEQ mechanism and the univariate expansions of KAN are crucial for superior performance.  
-Read more about these studies here:  
-[Ablation Studies](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Ablation.md)
-
-
-## Conclusion and Future Work
-
-Our work demonstrates that DEQ-KAN achieves robust classification with high accuracy and efficiency. We discuss its implications for medical imaging and outline potential directions for further research, such as extending the method to additional modalities and optimizing for real-time deployment.  
-For a complete conclusion and future outlook, see:  
-[Conclusion and Future Work](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Conclusion.md)
-
-
-
-## Appendix: Configurations & Computational Details
-
-The appendix provides full details on hyperparameter settings, training configurations, and computational cost analyses. This section is essential for reproducing our results and understanding the practical considerations of our approach.  
-Access the appendix here:  
-[Appendix: Configurations & Computational Details](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Appendix.md)
+It achieves **strong robustness**, **high accuracy**, and **efficient memory usage**, thanks to the implicit modeling of an “infinite stack” of CNN+KAN layers.
 
 ---
 
-## Implementation Code
+## Table of Contents
 
-The full implementation is available in the repository and is divided into several parts for clarity. You can browse each component via the following links:
+1. [Introduction & Background](#introduction--background)  
+2. [Methodology Overview](#methodology-overview)  
+3. [Experiments & Key Results](#experiments--key-results)  
+4. [Implementation & Code Link](#implementation--code-link)  
+5. [Installation & Requirements](#installation--requirements)  
+6. [Advice on Hyperparameter Tuning](#advice-on-hyperparameter-tuning)  
+7. [Citation](#citation)  
+8. [Contact](#contact)  
+9. [Author's Note](#authors-note)
 
-- **Dataset and Preprocessing:**  
-  [DataLoading.md](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/DataLoading.md)
-  
-- **Model Architecture:**  
-  [ModelArchitecture.md](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/ModelArchitecture.md)
-  
-- **Training Script & Learning Rate Schedulers:**  
-  [TrainingScript.md](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/TrainingScript.md)
-  
-- **Weight Initialization & Utility Functions:**  
-  [LRScheduler.md](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/LRScheduler.md)
+---
 
-The provided code includes advanced features such as gradual warm-up, adaptive learning rate scheduling, robust Xavier initialization, and dropout regularization in the KAN block.
+## Introduction & Background
+**Kolmogorov–Arnold Networks (KANs)** place univariate basis expansions on each dimension-to-dimension “edge,” rather than having a single global activation on each node. They are mathematically grounded in the Kolmogorov–Arnold representation theorem and can be more expressive and interpretable than standard MLPs.
+
+**Deep Equilibrium Models (DEQs)** eliminate explicit layers by formulating a single transformation and iterating it until convergence. This “infinite-depth” representation uses only the memory needed for one layer’s parameters.
+
+By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
+
+---
+
+## Methodology Overview
+1. **CNN-Based Feature Extraction:** A typical CNN backbone processes raw images to produce meaningful feature vectors.  
+2. **DEQ Iterations:** We define a transformation \(F(\mathbf{z})\) that includes both CNN features and KAN expansions, then iteratively solve \(\mathbf{z}^{\ast} = F(\mathbf{z}^{\ast})\).  
+3. **KAN Blocks:** Each iteration uses univariate expansions \(\phi_{j,i}(z_i)\) for each edge \((i\rightarrow j)\), providing fine-grained modeling capacity.  
+4. **Implicit Deep Network:** Instead of stacking many CNN+KAN layers, one implicit layer is iterated until convergence. Memory usage remains closer to a single layer, while effectively modeling infinite depth.
+
+In our ablation studies, we show that both the **iterative** nature of DEQs and the **univariate expansions** of KAN together yield superior performance compared to feedforward baselines.
+
+---
+
+## Experiments & Key Results
+We validate **DEQ-KAN** on:
+- **Chest X-ray (Pneumonia Detection):** Achieved top accuracy and F1 scores despite class imbalance.
+- **Brain Tumor (MRI) Classification:** Demonstrated superior ability to separate multiple tumor classes.
+- **Histopathology (Benign vs. Malignant):** Accurately distinguishes subtle morphological features in small images.
+
+Quantitative metrics (accuracy, precision, recall, specificity, ROC AUC) and confusion matrices consistently outperform traditional CNNs, Transformers, and other baselines.
+
+---
+
+## Implementation & Code Link
+You can find the **complete implementation** (including the dataset class, CNN backbone, KAN blocks, DEQ routine, and a training script with warm-up, adaptive LR, robust init, and dropout) in our [codes folder](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes).  
+
+The training script handles:
+- **Gradual Warm-Up** of the learning rate,  
+- **Adaptive LR scheduling** (step-based decay after warm-up),  
+- **Xavier initialization** for CNN and KAN parameters,  
+- **Dropout** in the KAN block for regularization,  
+- **GPU or CPU** execution (with early stopping).
+
+---
+
+## Installation & Requirements
+Below is an example setup referencing [pykan](https://github.com/KindXiaoming/pykan) conventions. Adapt as needed for **DEQ-KAN**:
+
+**Installation via GitHub**
+```bash
+pip install git+https://github.com/KindXiaoming/pykan.git
+
+
+**Requirements**
+# python==3.9.7
+matplotlib==3.6.2
+numpy==1.24.4
+scikit_learn==1.1.3
+setuptools==65.5.0
+sympy==1.11.1
+torch==2.2.2
+tqdm==4.66.2
+pandas==2.0.1
+seaborn
+pyyaml
+
+
+**Efficiency Mode**
+When you manually write the training loop and do not use the symbolic branch, call:
+model.speed()
+
 
 ---
 
