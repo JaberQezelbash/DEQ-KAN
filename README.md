@@ -28,7 +28,7 @@ Medical image classification is a critical yet challenging task, where even mino
 - **CNN-based Feature Extraction:** Used up front to capture spatial patterns (e.g., in medical images).
 
 This approach yields strong robustness, high accuracy, and efficient memory usage, thanks to the implicit modeling of an “infinite stack” of CNN+KAN layers. We show its utility in:
-- Pneumonia detection in chest <u>X-ray</u> images,
+- Pneumonia detection in chest X-ray images,
 - Multi-class brain tumor classification** in MRI scans,
 - Benign-vs.-malignant histopathology image classification.
 
