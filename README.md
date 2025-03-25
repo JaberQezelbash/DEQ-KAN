@@ -156,3 +156,13 @@ If you use **DEQ-KAN** in your work, please cite this paper as follows:
   year={2025}
 }
 ```
+
+## Contact
+For any questions related to DEQ-KAN, please contact:
+qezelbashc@jaber@ufl.edu
+
+
+## Author's Note
+I appreciate your interest in DEQ-KAN. 
+The aim is to provide a robust, memory-friendly, and interpretability-enhanced solution for challenging tasks like medical imaging classification. 
+Feedback and collaboration inquiries are welcome!
