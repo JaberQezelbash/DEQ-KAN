@@ -17,7 +17,7 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 
 **DEQ-KAN** unifies [Deep Equilibrium Models (DEQs)](https://arxiv.org/abs/1909.01377) with [Kolmogorov-Arnold Networks(KANs)](https://arxiv.org/abs/2404.19756), providing an infinite-depth framework that repeatedly refines its feature representations. It has proven effective in challenging tasks like **medical image classification** (pneumonia detection in X-rays, brain tumor classification, and histopathology analysis). DEQ-KAN achieves strong robustness, high accuracy, and efficient memory usage by implicitly modeling a “stack” of infinitely many CNN+KAN layers.
 
----
+
 
 ## Table of Contents
 
@@ -36,13 +36,12 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 - [Contact](#contact)
 - [Author's Note](#authors-note)
 
----
 
 ## Introduction & Background
 
-This work motivates the design of **DEQ-KAN** by contrasting traditional multilayer perceptrons (MLPs) with KANs and highlighting the benefits of implicit infinite-depth architectures (DEQs). For a full introduction and background, you can refer to the detailed section of [Introduction & Background](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Introduction.md)
+This work motivates the design of **DEQ-KAN** by contrasting traditional multilayer perceptrons (MLPs) with KANs and highlighting the benefits of implicit infinite-depth architectures (DEQs). For a full introduction and background, you can refer to the detailed section of [Introduction & Background](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Introduction.md).
 
----
+
 
 ## Methodology
 
@@ -54,7 +53,7 @@ Our methodology integrates three core components:
 For complete details including equations, convergence analysis, and model architecture, see:  
 [Methodology](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Methodology.md)
 
----
+
 
 ## Experiments and Results
 
@@ -66,7 +65,7 @@ We validate **DEQ-KAN** on three medical image classification tasks:
 Comprehensive quantitative metrics and visualization (confusion matrices, ROC curves, t-SNE plots) are discussed in our paper. For the experimental setup and detailed results, visit:  
 [Experiments and Results](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Experiments.md)
 
----
+
 
 ## Ablation Studies
 
@@ -74,7 +73,6 @@ To understand the contribution of each component, we performed ablation studies 
 Read more about these studies here:  
 [Ablation Studies](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Ablation.md)
 
----
 
 ## Conclusion and Future Work
 
@@ -82,7 +80,7 @@ Our work demonstrates that DEQ-KAN achieves robust classification with high accu
 For a complete conclusion and future outlook, see:  
 [Conclusion and Future Work](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Conclusion.md)
 
----
+
 
 ## Appendix: Configurations & Computational Details
 
