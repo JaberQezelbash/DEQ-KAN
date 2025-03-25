@@ -40,7 +40,7 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 
 ## Introduction & Background
 
-This work motivates the design of **DEQ-KAN** by contrasting traditional multilayer perceptrons (MLPs) with Kolmogorov-Arnold Networks (KANs) and highlighting the benefits of implicit infinite-depth architectures (DEQs). For a full introduction and background, please refer to the detailed section:  
+This work motivates the design of **DEQ-KAN** by contrasting traditional multilayer perceptrons (MLPs) with KANs and highlighting the benefits of implicit infinite-depth architectures (DEQs). For a full introduction and background, please refer to the detailed section:  
 [Introduction & Background](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Introduction.md)
 
 ---
