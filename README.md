@@ -110,7 +110,7 @@ Additional environment details for reproducibility:
 - DEQ-KAN’s iterative fixed-point approach means multiple forward passes per sample. We cap iterations (e.g., ~10) and check for convergence.
 - On a CPU-only environment, average epoch times ranged from 45–115 minutes, depending on dataset size (X-ray, MRI, or histopathology).  
 - Empirically, convergence typically occurred in 7–12 iterations, adding modest overhead relative to large performance gains.
-- **GPU Compatibility**: On modern GPUs (e.g., RTX 3080), we observed ~4–10× faster training. DEQ-KAN remains memory-efficient since we differentiate only a single implicit module.
+- GPU Compatibility: On modern GPUs (e.g., RTX 3080), we observed ~4–10× faster training. DEQ-KAN remains memory-efficient since we differentiate only a single implicit module.
 
 
 
