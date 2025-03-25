@@ -28,7 +28,7 @@ This approach yields **strong robustness**, **high accuracy**, and **efficient m
 - **Multi-class brain tumor classification** in MRI scans,
 - **Benign-vs.-malignant** histopathology image classification.
 
----
+
 
 ## Table of Contents
 
@@ -42,7 +42,7 @@ This approach yields **strong robustness**, **high accuracy**, and **efficient m
 8. [Contact](#contact)  
 9. [Author's Note](#authors-note)
 
----
+
 
 ## Introduction & Background
 
@@ -52,7 +52,7 @@ This approach yields **strong robustness**, **high accuracy**, and **efficient m
 
 By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
 
----
+
 
 ## Methodology Overview
 
@@ -63,7 +63,7 @@ By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in 
 
 Ablation studies demonstrate that the iterative DEQ mechanism and KAN’s univariate expansions jointly yield superior performance over standard feedforward networks.
 
----
+
 
 ## Experiments & Key Results
 
@@ -75,7 +75,7 @@ We validate **DEQ-KAN** on:
 
 Our results consistently outperform baselines (CNNs, Transformers, etc.) across metrics like accuracy, precision, recall, specificity, and ROC AUC.
 
----
+
 
 ## Implementation & Code Link
 
@@ -112,7 +112,7 @@ Additional environment details for reproducibility:
 - Empirically, convergence typically occurred in 7–12 iterations, adding modest overhead relative to large performance gains.
 - **GPU Compatibility**: On modern GPUs (e.g., RTX 3080), we observed ~4–10× faster training. DEQ-KAN remains memory-efficient since we differentiate only a single implicit module.
 
----
+
 
 ## Installation & Requirements
 
