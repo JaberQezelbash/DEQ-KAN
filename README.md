@@ -20,14 +20,12 @@ This repository is the original DEQ-KAN concept as presented in this paper:
 Medical image classification is a critical yet challenging task, where even minor misclassifications can have serious clinical implications. Traditional deep learning models often require stacking numerous layers to capture complex patterns, leading to high memory usage and potential overfitting, especially in settings with limited or imbalanced data. DEQ-KAN is motivated by the need to overcome these hurdles by unifying [Deep Equilibrium Models](https://arxiv.org/abs/1909.01377)—which enable implicit, infinite-depth representations through iterative fixed-point convergence—with [Kolmogorov–Arnold Networks](https://arxiv.org/abs/2404.19756) that introduce flexible, learnable univariate activations on each network edge. This innovative synergy not only improves accuracy and robustness in tasks such as pneumonia detection, brain tumor classification, and histopathology analysis, but also enhances interpretability and computational efficiency, paving the way for more reliable and scalable medical imaging solutions.
 
 
-
-
 **DEQ-KAN** combines:
 - **Deep Equilibrium Models (DEQs):** Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
 - **Kolmogorov–Arnold Networks (KANs):** A “dual” to MLPs, with learnable univariate functions on edges inspired by the Kolmogorov–Arnold (K–A) representation theorem.
 - **CNN-based Feature Extraction:** Used up front to capture spatial patterns (e.g., in medical images).
 
-This approach yields strong robustness, high accuracy, and efficient memory usage, thanks to the implicit modeling of an “infinite stack” of CNN+KAN layers. We show its utility in:
+This approach yields strong robustness, high accuracy, and efficient memory usage, thanks to the implicit modeling of an “infinite stack” of CNN+KAN layers. The model has successfully been tested on the followings data modalities:
 - Pneumonia detection in chest X-ray images,
 - Multi-class brain tumor classification** in MRI scans,
 - Benign-vs.-malignant histopathology image classification.
