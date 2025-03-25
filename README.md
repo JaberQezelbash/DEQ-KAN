@@ -136,13 +136,6 @@ pyyaml
 
 ```
 
-**Efficiency Mode**
-```bash
-When you manually write the training loop and do not use the symbolic branch, call:
-model.speed()
-```
-
-
 
 
 
