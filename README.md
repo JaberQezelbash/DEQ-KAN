@@ -17,12 +17,6 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 
 ---
 
-
-
-**DEQ-KAN** unifies Deep Equilibrium Models (DEQs) with Kolmogorov-Arnold Networks (KANs) to build an implicit, infinite-depth framework that refines feature representations iteratively. Our method has been applied successfully to challenging medical imaging tasks such as pneumonia detection, brain tumor classification, and histopathology analysis—achieving state-of-the-art accuracy, robustness, and memory efficiency.
-
----
-
 ## Table of Contents
 
 - [Introduction & Background](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes/Introduction.md)
