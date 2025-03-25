@@ -6,7 +6,7 @@ DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 <img width="600" alt="kan_plot" src="https://github.com/JaberQezelbash/DEQ-KAN/blob/main/assets/DEQ-KAN.svg">
 
 
-This repository extends the original Kolmogorov-Arnold Networks (KANs) concept to include our new method, **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks**, as presented in our paper:
+This repository is the original DEQ-KAN concept as presented in this paper:
 
 > **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification**  
 > *by Jaber Qezelbash-Chamak*.  
@@ -15,20 +15,8 @@ This repository extends the original Kolmogorov-Arnold Networks (KANs) concept t
 ---
 
 
-# DEQ-KAN
-DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 
-<img width="600" alt="kan_plot" src="https://github.com/JaberQezelbash/DEQ-KAN/blob/main/assets/DEQ-KAN.svg">
-
-This repository extends the original Kolmogorov-Arnold Networks (KANs) concept to include our new method, **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks**, as presented in our paper:
-
-> **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification**  
-> *by Jaber Qezelbash-Chamak*.  
-> [[Paper Link]](https://github.com/JaberQezelbash/DEQ-KAN) (Implementation Code)
-
----
-
-# DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
+## DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification
 
 **DEQ-KAN** combines:
 - **Deep Equilibrium Models (DEQs):** Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
