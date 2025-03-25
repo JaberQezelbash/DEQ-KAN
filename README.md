@@ -89,12 +89,8 @@ The training script handles:
 ## Installation & Requirements
 Below is an example setup referencing [pykan](https://github.com/KindXiaoming/pykan) conventions. Adapt as needed for **DEQ-KAN**:
 
-**Installation via GitHub**
-```bash
-pip install git+https://github.com/KindXiaoming/pykan.git
-
-
 **Requirements**
+```bash
 # python==3.9.7
 matplotlib==3.6.2
 numpy==1.24.4
@@ -109,6 +105,7 @@ pyyaml
 
 
 **Efficiency Mode**
+```bash
 When you manually write the training loop and do not use the symbolic branch, call:
 model.speed()
 
