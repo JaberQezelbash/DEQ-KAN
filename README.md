@@ -108,7 +108,7 @@ pyyaml
 ```bash
 When you manually write the training loop and do not use the symbolic branch, call:
 model.speed()
-
+```
 
 ---
 
@@ -123,4 +123,4 @@ If you use **DEQ-KAN** in your work, please cite this paper as follows:
   journal={Biomedical Signal Processing and Control},
   year={2025}
 }
-
+```
