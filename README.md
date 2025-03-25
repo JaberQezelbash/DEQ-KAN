@@ -10,7 +10,7 @@ This repository is the original DEQ-KAN concept as presented in this paper:
 
 > **DEQ-KAN: Deep Equilibrium Kolmogorov–Arnold Networks for Robust Classification**  
 > *by Jaber Qezelbash-Chamak*.  
-> [[Paper Link]](https://github.com/JaberQezelbash/DEQ-KAN) (Implementation Code)
+> [[Paper Link]](https://github.com/JaberQezelbash/DEQ-KAN)
 
 ---
 
@@ -159,7 +159,7 @@ If you use **DEQ-KAN** in your work, please cite this paper as follows:
 
 ## Contact
 For any questions related to DEQ-KAN, please contact:
-qezelbashc@jaber@ufl.edu
+[qezelbashc@jaber@ufl.edu](qezelbashc@jaber@ufl.edu)
 
 
 ## Author's Note
