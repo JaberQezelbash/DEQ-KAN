@@ -29,7 +29,7 @@ This repository provides the **DEQ-KAN** approach, including code, usage instruc
 
 It achieves **strong robustness**, **high accuracy**, and **efficient memory usage**, thanks to the implicit modeling of an “infinite stack” of CNN+KAN layers.
 
----
+
 
 ## Table of Contents
 
@@ -43,7 +43,7 @@ It achieves **strong robustness**, **high accuracy**, and **efficient memory usa
 8. [Contact](#contact)  
 9. [Author's Note](#authors-note)
 
----
+
 
 ## Introduction & Background
 **Kolmogorov–Arnold Networks (KANs)** place univariate basis expansions on each dimension-to-dimension “edge,” rather than having a single global activation on each node. They are mathematically grounded in the Kolmogorov–Arnold representation theorem and can be more expressive and interpretable than standard MLPs.
@@ -52,7 +52,7 @@ It achieves **strong robustness**, **high accuracy**, and **efficient memory usa
 
 By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
 
----
+
 
 ## Methodology Overview
 1. **CNN-Based Feature Extraction:** A typical CNN backbone processes raw images to produce meaningful feature vectors.  
@@ -62,7 +62,7 @@ By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in 
 
 In our ablation studies, we show that both the **iterative** nature of DEQs and the **univariate expansions** of KAN together yield superior performance compared to feedforward baselines.
 
----
+
 
 ## Experiments & Key Results
 We validate **DEQ-KAN** on:
@@ -84,7 +84,7 @@ The training script handles:
 - **Dropout** in the KAN block for regularization,  
 - **GPU or CPU** execution (with early stopping).
 
----
+
 
 ## Installation & Requirements
 Below is an example setup referencing [pykan](https://github.com/KindXiaoming/pykan) conventions. Adapt as needed for **DEQ-KAN**:
@@ -110,7 +110,9 @@ When you manually write the training loop and do not use the symbolic branch, ca
 model.speed()
 ```
 
----
+
+
+
 
 ## Citation
 
