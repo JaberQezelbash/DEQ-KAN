@@ -112,13 +112,13 @@ The provided code includes advanced features such as gradual warm-up, adaptive l
 
 ## Citation
 
-If you use **DEQ-KAN** in your work, please cite our paper as follows:
+If you use **DEQ-KAN** in your work, please cite this paper as follows:
 
 ```bibtex
-@article{qezelbash2024DEQKAN,
+@article{qezelbash2025DEQKAN,
   title={DEQ-KAN: Deep Equilibrium Kolmogorov-Arnold Networks for Robust Classification},
-  author={Qezelbash-Chamak, Jaber and ...},
+  author={Qezelbash-Chamak, Jaber},
   journal={Biomedical Signal Processing and Control},
-  year={2024}
+  year={2025}
 }
 
