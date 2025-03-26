@@ -39,7 +39,7 @@ This approach yields strong robustness, high accuracy, and efficient memory usag
 3. [Experiments & Key Results](#experiments--key-results)  
 4. [Implementation & Code Link](#implementation--code-link)  
 5. [Installation & Requirements](#installation--requirements)  
-6. [Hyperparameter and Configurations](#hyperparameters--configurations)  
+6. [Hyperparameter and Configurations](#configurations)  
 7. [Citation](#citation)  
 8. [Contact](#contact)  
 9. [Author's Note](#authors-note)
@@ -83,17 +83,9 @@ Our results consistently outperform baselines (CNNs, Transformers, etc.) across 
 
 The **complete implementation** (including dataset classes, CNN backbone, KAN blocks, DEQ routines, and training script with warm-up, adaptive LR, robust initialization, and dropout) is in the [codes folder](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes).  
 
-### Hyperparameters & Configurations
+### Configurations 
 
-For detailed hyperparameters and implementation settings, please refer to our [Hyperparameters & Configurations](assets/hyperparameters_configurations.md).
-
-
-### Computational Effort
-
-- DEQ-KAN’s iterative fixed-point approach means multiple forward passes per sample. We cap iterations (e.g., ~10) and check for convergence.
-- On a CPU-only environment, average epoch times ranged from 45–115 minutes, depending on dataset size (X-ray, MRI, or histopathology).  
-- Empirically, convergence typically occurred in 7–12 iterations, adding modest overhead relative to large performance gains.
-- GPU Compatibility: On modern GPUs (e.g., RTX 3080), we observed ~4–10× faster training. DEQ-KAN remains memory-efficient since we differentiate only a single implicit module.
+For detailed configurations, hyperparameters, and computational efforts, please refer to our [Configurations](assets/configurations.md).
 
 
 
