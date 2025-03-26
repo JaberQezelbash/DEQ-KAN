@@ -24,7 +24,7 @@ Medical image classification is a critical yet challenging task, where even mino
 
 1. [Introduction](#introduction)  
 2. [Methodology Overview](#methodology-overview)  
-3. [Experiments & Key Results](#experiments--key-results)  
+3. [Experiments](#experiments)  
 4. [Implementation & Codes](#implementation--codes)  
 5. [Installation & Requirements](#installation--requirements)  
 6. [Configurations](#configurations)  
@@ -58,7 +58,7 @@ Ablation studies demonstrate that the iterative DEQ mechanism and KAN’s univar
 
 
 
-## Experiments & Key Results
+## Experiments
 
 We validate **DEQ-KAN** on:
 
