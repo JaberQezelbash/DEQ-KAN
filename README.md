@@ -85,7 +85,7 @@ The **complete implementation** (including dataset classes, CNN backbone, KAN bl
 
 ### Hyperparameters & Configurations
 
-For detailed hyperparameters and implementation settings, please refer to our [Hyperparameters & Implementation Details](assets/hyperparameters.md).
+For detailed hyperparameters and implementation settings, please refer to our [Hyperparameters & Configurations](assets/hyperparameters_configurations.md).
 
 
 ### Computational Effort
