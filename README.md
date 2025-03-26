@@ -39,7 +39,7 @@ This approach yields strong robustness, high accuracy, and efficient memory usag
 3. [Experiments & Key Results](#experiments--key-results)  
 4. [Implementation & Code Link](#implementation--code-link)  
 5. [Installation & Requirements](#installation--requirements)  
-6. [Advice on Hyperparameter Tuning](#hyperparameter--configuations)  
+6. [Hyperparameter and Configurations](#hyperparameters--configurations)  
 7. [Citation](#citation)  
 8. [Contact](#contact)  
 9. [Author's Note](#authors-note)
@@ -83,7 +83,7 @@ Our results consistently outperform baselines (CNNs, Transformers, etc.) across 
 
 The **complete implementation** (including dataset classes, CNN backbone, KAN blocks, DEQ routines, and training script with warm-up, adaptive LR, robust initialization, and dropout) is in the [codes folder](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes).  
 
-### Hyperparameters & Configuations
+### Hyperparameters & Configurations
 
 For detailed hyperparameters and implementation settings, please refer to our [Hyperparameters & Implementation Details](assets/hyperparameters.md).
 
