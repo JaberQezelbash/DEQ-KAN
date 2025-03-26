@@ -51,7 +51,7 @@ DEQ-KAN combines:
 
 1. **CNN-Based Feature Extraction**: A typical CNN backbone processes raw images to produce meaningful feature vectors.  
 2. **DEQ Iterations**: We define a transformation \(F(\mathbf{z})\) that includes both CNN features and KAN expansions, then iteratively solve \(\mathbf{z}^{\ast} = F(\mathbf{z}^{\ast})\).  
-3. **KAN Blocks**: Each iteration uses univariate expansions \(\phi_{j,i}(z_i)\) for each edge \((i\to j)\), providing fine-grained modeling capacity.  
+3. **KAN Blocks**: Each iteration uses univariate expansions $\phi_{j,i}(z_i)$ for each edge \((i\to j)\), providing fine-grained modeling capacity.  
 4. **Implicit Deep Network**: Instead of stacking many CNN+KAN layers, one implicit layer is iterated until convergence. Memory usage remains closer to a single layer, while effectively modeling infinite depth.
 
 Ablation studies demonstrate that the iterative DEQ mechanism and KAN’s univariate expansions jointly yield superior performance over standard feedforward networks.
