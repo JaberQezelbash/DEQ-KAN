@@ -60,7 +60,7 @@ Ablation studies demonstrate that the iterative DEQ mechanism and KAN’s univar
 
 ## Experiments
 
-We validate **DEQ-KAN** on:
+We validate DEQ-KAN on:
 
 - Chest X-ray (Pneumonia Detection): Achieved top accuracy and F1 scores despite class imbalance.  
 - Brain Tumor (MRI) Classification: Demonstrated superior ability to separate multiple tumor classes.  
@@ -105,7 +105,7 @@ pyyaml
 
 ## Citation
 
-If you use **DEQ-KAN** in your work, please cite this paper as follows:
+If you use DEQ-KAN in your work, please cite this paper as follows:
 
 ```bibtex
 @article{qezelbash2025DEQKAN,
