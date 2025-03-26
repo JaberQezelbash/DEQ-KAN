@@ -19,17 +19,10 @@ This repository is the original DEQ-KAN concept as presented in this paper:
 ## Motivation:
 Medical image classification is a critical yet challenging task, where even minor misclassifications can have serious clinical implications. Traditional deep learning models often require stacking numerous layers to capture complex patterns, leading to high memory usage and potential overfitting, especially in settings with limited or imbalanced data. DEQ-KAN is motivated by the need to overcome these hurdles by unifying [Deep Equilibrium Models](https://arxiv.org/abs/1909.01377)—which enable implicit, infinite-depth representations through iterative fixed-point convergence—with [Kolmogorov–Arnold Networks](https://arxiv.org/abs/2404.19756) that introduce flexible, learnable univariate activations on each network edge. This innovative synergy not only improves accuracy and robustness in tasks such as pneumonia detection, brain tumor classification, and histopathology analysis, but also enhances interpretability and computational efficiency, paving the way for more reliable and scalable medical imaging solutions.
 
-**DEQ-KAN** combines:
-- Deep Equilibrium Models (DEQs): Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
-- Kolmogorov–Arnold Networks (KANs): A “dual” to MLPs, with learnable univariate functions on edges inspired by the Kolmogorov–Arnold (K–A) representation theorem.
-- CNN-based Feature Extraction: Used up front to capture spatial patterns (e.g., in medical images).
-
-
-
 
 ## Table of Contents
 
-1. [Introduction & Background](#introduction--background)  
+1. [Introduction](#introduction)  
 2. [Methodology Overview](#methodology-overview)  
 3. [Experiments & Key Results](#experiments--key-results)  
 4. [Implementation & Codes](#implementation--codes)  
@@ -41,13 +34,16 @@ Medical image classification is a critical yet challenging task, where even mino
 
 
 
-## Introduction & Background
+## Introduction
 
 **Kolmogorov–Arnold Networks (KANs)** place univariate basis expansions on each dimension-to-dimension “edge,” rather than having a single global activation on each node. They are mathematically grounded in the Kolmogorov–Arnold representation theorem and can be more expressive and interpretable than standard MLPs.
-
 **Deep Equilibrium Models (DEQs)** eliminate explicit layers by formulating a single transformation and iterating it until convergence. This “infinite-depth” representation uses only the memory needed for one layer’s parameters.
-
 By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
+
+DEQ-KAN combines:
+- Deep Equilibrium Models (DEQs): Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
+- Kolmogorov–Arnold Networks (KANs): A “dual” to MLPs, with learnable univariate functions on edges inspired by the Kolmogorov–Arnold (K–A) representation theorem.
+- CNN-based Feature Extraction: Used up front to capture spatial patterns (e.g., in medical images).
 
 
 
