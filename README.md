@@ -41,8 +41,8 @@ Medical image classification is a critical yet challenging task, where even mino
 By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
 
 DEQ-KAN combines:
-- Deep Equilibrium Models (DEQs): Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
-- Kolmogorov–Arnold Networks (KANs): A “dual” to MLPs, with learnable univariate functions on edges inspired by the Kolmogorov–Arnold (K–A) representation theorem.
+- DEQs: Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
+- KANs: A “dual” to MLPs, with learnable univariate functions on edges inspired by the Kolmogorov–Arnold (K–A) representation theorem.
 - CNN-based Feature Extraction: Used up front to capture spatial patterns (e.g., in medical images).
 
 
