@@ -22,6 +22,8 @@ Additional environment details for reproducibility:
 | **Data Augmentation**| Flip, rotation up to 15°, normalization     | Minimal transformations to preserve subtle pathological details while reducing overfitting risk.     |
 | **Optimizer**        | Adam (weight decay=1e-5)                    | Balanced speed and stability. Weight decay for additional regularization.                            |
 
+
+
 ### Computational Effort
 
 - DEQ-KAN’s iterative fixed-point approach means multiple forward passes per sample. We cap iterations (e.g., ~10) and check for convergence.
