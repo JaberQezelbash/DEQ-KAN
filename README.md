@@ -39,7 +39,7 @@ This approach yields strong robustness, high accuracy, and efficient memory usag
 3. [Experiments & Key Results](#experiments--key-results)  
 4. [Implementation & Code Link](#implementation--code-link)  
 5. [Installation & Requirements](#installation--requirements)  
-6. [Hyperparameter and Configurations](#configurations)  
+6. [Configurations](#configurations)  
 7. [Citation](#citation)  
 8. [Contact](#contact)  
 9. [Author's Note](#authors-note)
