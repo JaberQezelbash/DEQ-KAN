@@ -3,7 +3,7 @@
 
 
 
-<img width="700" alt="kan_plot" src="https://github.com/JaberQezelbash/DEQ-KAN/blob/main/assets/DEQ-KAN.svg">
+<img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/DEQ-KAN/blob/main/assets/DEQ-KAN.svg">
 
 
 This repository is the original DEQ-KAN concept as presented in this paper:
