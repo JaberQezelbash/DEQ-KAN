@@ -102,7 +102,7 @@ pyyaml
 
 
 
-
+<!-- 
 ## Citation
 
 If you use DEQ-KAN in your work, please cite this paper as follows:
@@ -115,6 +115,8 @@ If you use DEQ-KAN in your work, please cite this paper as follows:
   year={2025}
 }
 ```
+-->
+
 
 ## Contact
 For any questions related to DEQ-KAN, please contact:
