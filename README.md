@@ -38,7 +38,7 @@ Medical image classification is a critical yet challenging task, where even mino
 
 **KANs** place univariate basis expansions on each dimension-to-dimension “edge,” rather than having a single global activation on each node. They are mathematically grounded in the Kolmogorov–Arnold representation theorem and can be more expressive and interpretable than standard MLPs.
 **DEQs** eliminate explicit layers by formulating a single transformation and iterating it until convergence. This “infinite-depth” representation uses only the memory needed for one layer’s parameters.
-By **merging DEQs with KANs**, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
+By merging DEQs with KANs, **DEQ-KAN** repeatedly refines a hidden state in tandem with CNN-extracted features, enabling better classification results across imbalanced, multi-class, or small-image tasks in medical imaging.
 
 DEQ-KAN combines:
 - DEQs: Implicit infinite-depth networks defined by fixed-point iteration (rather than explicitly stacking layers).
