@@ -119,7 +119,7 @@ If you use DEQ-KAN in your work, please cite this paper as follows:
 
 
 ## Contact
-For any questions related to DEQ-KAN, please contact:
+For any questions related to DEQ-KAN, you may contact:
 [qezelbashc.jaber@ufl.edu](qezelbashc.jaber@ufl.edu)
 
 
