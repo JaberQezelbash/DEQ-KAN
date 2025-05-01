@@ -72,7 +72,7 @@ Our results consistently outperform baselines (CNNs, Transformers, etc.) across 
 
 ## Implementation & Codes
 
-The complete implementation (including dataset classes, CNN backbone, KAN blocks, DEQ routines, and training script with warm-up, adaptive LR, robust initialization, and dropout) is available in the [codes folder](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes).  
+The complete implementation (including dataset classes, CNN backbone, KAN blocks, DEQ routines, training script with warm-up, adaptive LR, robust initialization, and dropout) is available in the [codes folder](https://github.com/JaberQezelbash/DEQ-KAN/blob/main/codes).  
 
 ### Configurations 
 
