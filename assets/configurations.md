@@ -7,7 +7,7 @@ Below is a brief summary of core hyperparameters and settings used in our experi
 | **Batch Size**                   | 16          | 8, 32         | Manual search                  | Kept moderate to accommodate CPU memory and mitigate over/underfitting.                                                     |
 | **Learning Rate**                | 1e-3        | 1e-4,<br/>1e-2    | Lerning Rate Scheduler         | 1e-3 balanced convergence speed and stability. Too high => divergence; too low => slow training.                            |
 | **DEQ Iterations**               | 10          | 5–15          | Manual search                  | Iterations ensure hidden-state convergence without excessive overhead.                                                      |
-| **Relaxation Coefficient ($\alpha$)** | 0.5        | 0.1–1.0       | Manual search (step $=0.1$)               | $\alpha = 0.5$ gave stable convergence; smaller $\alpha$ requires more iterations.                                      |
+| **Relaxation Coefficient ($\alpha$)** | 0.5        | 0.1–1.0       | Manual search<br/>(step $=0.1$)               | $\alpha = 0.5$ gave stable convergence; smaller $\alpha$ requires more iterations.                                      |
 | **Gaussian Kernels in KAN**    | 32          | 16, 64        | Manual search                  | Enough basis functions for flexible expansions; too many can overfit.                                                       |
 | **Epochs**                       | 50          | 30–70         | Early stopping                 | Past ~50 epochs, gains were minor; we used validation-based early stopping.                                                 |
 
